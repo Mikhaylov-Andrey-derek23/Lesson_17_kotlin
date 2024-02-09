@@ -38,15 +38,21 @@ class FirstFragment : Fragment() {
     private fun setOnClickListeners() {
 
 
-        binding?.btnNavigateToYandex?.setOnClickListener {
-            val url = "https://ya.ru/"
+        binding?.btnNavigateToSwift?.setOnClickListener {
+            val url = "https://ru.wikipedia.org/wiki/Swift_(язык_программирования)"
             navigateToSite(url, WebViewFragment())
         }
 
-        binding?.btnNavigateGoogle?.setOnClickListener {
-            val url = "https://www.google.ru/"
+        binding?.btnNavigateToKotlin?.setOnClickListener {
+            val url = "https://ru.wikipedia.org/wiki/Kotlin"
             navigateToSite(url, WebViewFragment())
         }
+
+        binding?.btnNavigateToPhp?.setOnClickListener {
+            val url = "https://ru.wikipedia.org/wiki/PHP"
+            navigateToSite(url, WebViewFragment())
+        }
+
 
     }
 }
